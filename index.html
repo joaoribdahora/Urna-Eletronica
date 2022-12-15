@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Urna Eletrônica</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="urna">
+            <div class="tela">
+                <div class="d_1">
+                    <div class="d_1_left">
+                        <div class="d_1_1">
+                            <span> Seu voto para: </span>
+                        </div>
+                        <div class="d_1_2">
+                            <span>Vereador</span>                            
+                        </div>
+                        <div class="d_1_3">
+                            <div class="numero pisca">  </div>
+                            <div class="numero">  </div>
+                        </div>
+                        <div class="d_1_4">
+                            Nome:<br/>
+                            partido:<br/>
+                        </div>
+                    </div>
+                    <div class="d_1_right">
+                        <div class="d_1_image">
+                            <img src="" alt=""/>
+                            Prefeito
+                        </div>
+                        <div class="d_1_image small">
+                            <img src="" alt=""/>
+                            Vice-Prefeito
+                        </div>
+                    </div>
+                </div>
+                <div class="d_2">
+                    Aperte a tecla:<br/>
+                    Confirma para CONFIRMAR o seu voto<br/>
+                    Corrige para REINICIAR o seu voto<br/>
+                </div>
+            </div>
+            <div class="teclado">
+                <div class="linha">
+                    <div class="botao" onclick="clicou('1')"> 1 </div>
+                    <div class="botao" onclick="clicou('2')"> 2 </div>
+                    <div class="botao" onclick="clicou('3')"> 3 </div>
+                </div>
+                <div class="linha">
+                    <div class="botao" onclick="clicou('4')"> 4 </div>
+                    <div class="botao" onclick="clicou('5')"> 5 </div>
+                    <div class="botao" onclick="clicou('6')"> 6 </div>
+                </div>
+                <div class="linha">
+                    <div class="botao" onclick="clicou('7')"> 7 </div>
+                    <div class="botao" onclick="clicou('8')"> 8 </div>
+                    <div class="botao" onclick="clicou('9')"> 9 </div>
+                </div>
+                <div class="linha">
+                    <div class="botao" onclick="clicou('0')"> 0 </div>
+                </div>
+                <div class="linha">
+                    <div class="botao branco" onclick="votoBranco()"> Branco </div>
+                    <div class="botao corrige" onclick="corrige()"> Corrige </div>
+                    <div class="botao confirma" onclick="confirma()"> <strong>Confirma</strong> </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="etapas.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
